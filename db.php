@@ -36,8 +36,8 @@ $sql_voting_field = "CREATE TABLE IF NOT EXISTS voting_field (
     id INT AUTO_INCREMENT PRIMARY KEY,
     pool_id INT NOT NULL,
     name VARCHAR(255) NOT NULL,
-    image TEXT NOT NULL,
-    votes INT,
+    image TEXT,
+    votes INT DEFAULT 0,
     FOREIGN KEY (pool_id) REFERENCES voting_pool(id) ON DELETE CASCADE
 );";
 
@@ -46,9 +46,6 @@ $sql_votes = "CREATE TABLE IF NOT EXISTS votes (
     user_id INT NOT NULL,
     pool_id INT NOT NULL,
     vote INT NOT NULL,
-    name VARCHAR(255) NOT NULL,
-    image TEXT NOT NULL,
-    votes INT,
     FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
     FOREIGN KEY (pool_id) REFERENCES voting_pool(id) ON DELETE CASCADE,
     FOREIGN KEY (vote) REFERENCES voting_field(id) ON DELETE CASCADE

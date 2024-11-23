@@ -41,14 +41,14 @@ include './includes/auth.php';
   <?php
   $links = [
     "Home" => "home.php",
-    "About" => "about.php",
+    "Sobre" => "about.php",
   ];
   $unloggedAuthLinks = [
     "Login" => "login.php",
-    "Register" => "register.php",
+    "Registrar-se" => "register.php",
   ];
   $loggedAuthLinks = [
-    "Profile" => "profile.php",
+    "Perfil" => "profile.php",
     "Logout" => "logout.php",
   ];
   ?>

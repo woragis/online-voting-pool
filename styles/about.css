@@ -1,10 +1,13 @@
 .about-page {
-  background-color: #555;
+  background-color: #eee;
   padding: 50px;
   margin: 50px 200px;
+  border: 10px double var(--primary-dark);
 
   h1 {
-    color: #eee;
+    color: var(--accent-color);
+    text-align: center;
+    font-size: 32px;
   }
 
   .info {
@@ -21,6 +24,7 @@
 
   p {
     margin: 50px 0 0;
+    font-size: 18px;
     text-wrap: wrap;
     max-width: 500px;
     line-height: 2em;
@@ -35,7 +39,7 @@
   }
 
   .accent {
-    color: greenyellow;
+    color: var(--accent-color);
     font-weight: bold;
   }
 }

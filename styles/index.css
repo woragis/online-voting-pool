@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap");
 
+:root {
+  --accent-color: #425dd8;
+  --primary-dark: #151e46;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +21,7 @@
 }
 
 body {
-  background-color: #425dd8;
+  background-color: var(--accent-color);
   min-height: calc(100vh - 260px);
 }
 

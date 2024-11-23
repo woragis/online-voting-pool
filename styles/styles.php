@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap");
 
+:root {
+  --accent-color: #425dd8;
+  --primary-dark: #151e46;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +21,7 @@
 }
 
 body {
-  background-color: #425dd8;
+  background-color: var(--accent-color);
   min-height: calc(100vh - 260px);
 }
 
@@ -113,7 +118,7 @@ h3 {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    gap: 20px;
+    gap: 40px;
   }
 
   a {
@@ -130,7 +135,7 @@ h3 {
   gap: 50px;
   padding: 30px 50px;
   height: 200px;
-  background-color: #151e46;
+  background-color: var(--primary-dark);
   color: #fff;
 
   a {
@@ -147,8 +152,12 @@ h3 {
 
   ul {
     display: grid;
-    justify-items: flex-start;
+    justify-items: center;
     align-content: flex-start;
+  }
+
+  li {
+    text-decoration: underline;
   }
 }
 
@@ -157,26 +166,6 @@ h3 {
   ul {
     grid-template-columns: repeat(1, 1fr);
   }
-}
-
-.page-links::before,
-.page-links::after {
-  content: "";
-  position: absolute;
-  background-color: white;
-}
-.page-links::before {
-  top: 0;
-  right: -23px;
-  height: 100%;
-  width: 3px;
-}
-.page-links::after {
-  transform: translateY(-50%);
-  top: 50%;
-  right: -31px;
-  height: 3px;
-  width: 20px;
 }
 
 .social-media {
@@ -324,12 +313,15 @@ h3 {
   }
 }
 .about-page {
-  background-color: #555;
+  background-color: #eee;
   padding: 50px;
   margin: 50px 200px;
+  border: 10px double var(--primary-dark);
 
   h1 {
-    color: #eee;
+    color: var(--accent-color);
+    text-align: center;
+    font-size: 32px;
   }
 
   .info {
@@ -346,6 +338,7 @@ h3 {
 
   p {
     margin: 50px 0 0;
+    font-size: 18px;
     text-wrap: wrap;
     max-width: 500px;
     line-height: 2em;
@@ -360,7 +353,7 @@ h3 {
   }
 
   .accent {
-    color: greenyellow;
+    color: var(--accent-color);
     font-weight: bold;
   }
 }

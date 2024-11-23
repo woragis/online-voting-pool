@@ -1,0 +1,39 @@
+.pools-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 50px 30px;
+  gap: 20px;
+  padding: 10px;
+  border-radius: 25px;
+  height: max-content;
+  border: none;
+  background-color: #dadada;
+}
+
+.pool {
+  background-color: #fff;
+  border-radius: 20px;
+  border: none;
+  height: 200px;
+  min-width: 400px;
+  max-width: 100%;
+  padding: 10px;
+
+  h1,
+  h2,
+  h3 {
+    color: #000;
+  }
+}
+
+.vote-div {
+  border: 1px solid black;
+  margin: 5px 0;
+  font-size: small;
+  padding: 5px 10px;
+
+  display: flex;
+  justify-content: space-between;
+}

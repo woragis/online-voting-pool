@@ -1,4 +1,5 @@
 cat index.css > styles.php
+cat home.css >> styles.php
 cat navbar.css >> styles.php
 cat footer.css >> styles.php
 cat vote-pool.css >> styles.php

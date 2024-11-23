@@ -57,11 +57,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <?php echo $isLoggedIn ? "" : $disabledString ?>></textarea>
   <hr>
   <h2>Opcoes de Votacao</h2>
-  <input type="text" id="field-0-text" name="field-0-text" placeholder="Field 0 Text" required
+  <input type="text" id="field-0-text" name="field-0-text" placeholder="Opcao 1" required
     <?php echo $isLoggedIn ? "" : $disabledString ?> />
-  <input type="text" id="field-1-text" name="field-1-text" placeholder="Field 1 Text" required
+  <input type="text" id="field-1-text" name="field-1-text" placeholder="Opcao 2" required
     <?php echo $isLoggedIn ? "" : $disabledString ?> />
-  <input type="text" id="field-2-text" name="field-2-text" placeholder="Field 2 Text" required
+  <input type="text" id="field-2-text" name="field-2-text" placeholder="Opcao 3" required
     <?php echo $isLoggedIn ? "" : $disabledString ?> />
   <button type="submit"
     <?php echo $isLoggedIn ? "" : $disabledString ?>>Criar</button>

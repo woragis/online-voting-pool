@@ -13,7 +13,7 @@ if (!defined('ALLOW_INCLUDE')) {
     <p><a href="/forgot-password">Esqueceu a senha?</a></p>
     <p class="authentication-toggler">
       Don't have an account?
-      <a href="/register">Register Here</a>
+      <a href="register.php">Register Here</a>
     </p>
   </div>
 </form>

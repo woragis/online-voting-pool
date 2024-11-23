@@ -263,6 +263,11 @@ h3 {
     font-size: 12px;
   }
 
+  a {
+    text-decoration: underline;
+    color: var(--accent-color);
+  }
+
   .form-helper-buttons {
     margin: -10px 0 20px;
     width: 100%;

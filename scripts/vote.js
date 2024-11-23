@@ -21,3 +21,19 @@ function vote() {
     }
   };
 }
+
+/*
+php que vai processar
+<?php
+// Verifica se o parâmetro 'acao' foi enviado via POST
+if (isset($_POST['acao']) && $_POST['acao'] == 'cliqueNaDiv') {
+    // Aqui você pode colocar a lógica que deseja executar no servidor
+    // Por exemplo, gravar no banco de dados, enviar um e-mail, etc.
+    
+    // Exemplo simples de retorno
+    echo "Função PHP executada com sucesso!";
+} else {
+    echo "Ação não reconhecida.";
+}
+?>
+*/

@@ -357,6 +357,7 @@ h3 {
     object-fit: cover;
     margin-top: 50px;
     border: 2px solid white;
+    border-radius: 15px;
   }
 
   .accent {

@@ -16,7 +16,9 @@ include './includes/header.php';
       <br>
       <a href="home.php"><span class="accent" style="font-size: 2em; text-decoration: underline">DIVIRTA-SE</span></a>
     </p>
-    <img src="" alt="">
+    <img
+      src="https://img.freepik.com/fotos-premium/grupo-de-amigos-adolescentes-felizes-rindo-e-olhando-o-telefone-na-rua-durante-a-hora-de-ouro_68060-1770.jpg?w=740"
+      alt="Pessoas rindo olhando para o celular">
   </div>
 </section>
 

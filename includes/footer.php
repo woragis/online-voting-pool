@@ -8,17 +8,14 @@ $footerLinks = [
   "About" => "about.php",
 ];
 $socialMediaLinks = [
-  "Jezreel" => "https://github.com/woragis",
-  "Vini" => "https://github.com/Vinii225",
-  "Carlos" => "https://github.com/carlos_humberto",
-  "Roberio" => "https://github.com/roberinho",
-  "Daniel" => "https://github.com/daniel_onix_fala_merda",
-  "Arthur" => "https://github.com/arthur",
+  "Mikael" => "",
+  "Guilherme" => "",
+  "Ricardo" => "",
 ];
 ?>
 <footer class="footer-section">
   <section class="social-media">
-    <h3>Time do Github</h3>
+    <h3>Time</h3>
     <ul>
       <?php
       foreach ($socialMediaLinks as $title => $link) {

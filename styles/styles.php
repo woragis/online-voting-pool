@@ -149,7 +149,7 @@ button {
   ul {
     display: grid;
     align-content: flex-start;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     justify-items: center;
   }
 
@@ -194,6 +194,7 @@ button {
   row-gap: 20px;
   border: none;
   background-color: #f7f7f7;
+
   .pool {
     width: 100%;
 

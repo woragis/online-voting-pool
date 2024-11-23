@@ -1,13 +1,13 @@
 .pools-container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
-  margin: 50px 30px;
-  gap: 20px;
-  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-content: center;
+  margin: 40px 50px;
+  padding: 20px 20px 40px;
   border-radius: 25px;
-  height: max-content;
+  column-gap: 30px;
+  row-gap: 20px;
   border: none;
   background-color: #dadada;
 }
@@ -17,8 +17,7 @@
   border-radius: 20px;
   border: none;
   height: 200px;
-  min-width: 400px;
-  max-width: 100%;
+  width: 100%;
   padding: 10px;
 
   h1,
@@ -33,7 +32,14 @@
   margin: 5px 0;
   font-size: small;
   padding: 5px 10px;
+  cursor: pointer;
 
   display: flex;
   justify-content: space-between;
+}
+
+.unlogged-warn {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: rgb(204, 68, 68);
 }

@@ -6,21 +6,20 @@ if (!defined('ALLOW_INCLUDE')) {
 
 <section class="pools">
   <h1 class="pools-title">Votacoes</h1>
-  <section class=pools-container>
+  <section>
     <?php
     $sql = "SELECT * FROM voting_pool ORDER BY created_at DESC LIMIT 20";
     include 'db.php';
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
-      echo "<ul>";
+      echo "<ul class=pools-container>";
       while ($row = $result->fetch_assoc()) {
         $fields_sql = "SELECT * FROM voting_field WHERE pool_id = $row[id]";
         $author_sql = "SELECT * FROM users WHERE id = $row[author]";
         $authorName = $conn->query($author_sql)->fetch_assoc()['name'];
         echo "
-          <li class='listed-post'>
-            <a href='pool.php?id=$row[id]'>
+          <li class='pool'>
             <p class='author'><strong>Autor:</strong> " . $authorName . "</p>
             <h1 class='title'>" . $row['title'] . "</h1>";
         $pool_fields_result = $conn->query($fields_sql);
@@ -28,9 +27,9 @@ if (!defined('ALLOW_INCLUDE')) {
           echo "<ul>";
           while ($pool_field_row = $pool_fields_result->fetch_assoc()) {
             echo "
-          <div>
-          <h3>Votar em $pool_field_row[name]</h3>
-          <p>Total de votos: <strong>$pool_field_row[votes]</strong></p>
+          <div class=vote-div>
+          <h3>$pool_field_row[name]</h3>
+          <p><strong>$pool_field_row[votes]</strong></p>
           </div>
           ";
           }
@@ -38,7 +37,6 @@ if (!defined('ALLOW_INCLUDE')) {
         }
         echo "
             <p class='created-date'><strong><em>Postado em: " . $row['created_at'] . "</em></strong></p>
-            </a>
           </li>";
       }
       echo "</ul>";

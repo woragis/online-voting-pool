@@ -7,7 +7,7 @@ if (!defined('ALLOW_INCLUDE')) {
 <form method="POST" class="form">
   <h1>Login</h1>
   <input type="email" name="email" placeholder="Email" required autocomplete="email">
-  <input type="password" name="password" placeholder="Password" required autocomplete="off">
+  <input type="password" name="password" placeholder="Password" required>
   <button type="submit">Login</button>
   <div class="form-helper-buttons">
     <p class="authentication-toggler">

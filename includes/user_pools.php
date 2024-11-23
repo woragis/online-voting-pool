@@ -5,6 +5,7 @@ if (!defined('ALLOW_INCLUDE')) {
 ?>
 
 <section class="pools">
+  <p class="user-name">Ola <strong><?php echo $_SESSION['user_name'] ?></strong></p>
   <h1 class="pools-title">Suas Votacoes</h1>
   <section>
     <?php

@@ -5,15 +5,16 @@ if (!defined('ALLOW_INCLUDE')) {
 ?>
 
 <section class="pools">
-  <h1 class="pools-title">Feed de Votacoes</h1>
+  <h1 class="pools-title">Suas Votacoes</h1>
   <section>
     <?php
-    $sql = "SELECT * FROM pools ORDER BY created_at DESC LIMIT 20";
+    include "./includes/auth.php";
+    $sql = "SELECT * FROM pools WHERE author = $userId";
     include 'db.php';
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
-      echo "<ul class=pools-home-container>";
+      echo "<ul class=pools-profile-container>";
       while ($row = $result->fetch_assoc()) {
         $fields_sql = "SELECT * FROM fields WHERE pool_id = $row[id]";
         $author_sql = "SELECT * FROM users WHERE id = $row[author]";
@@ -52,7 +53,8 @@ if (!defined('ALLOW_INCLUDE')) {
         }
         echo "
           <a href=pool.php?id=$row[id]>
-            <p class='author'><strong>Criada por:</strong> " . $authorName . "</p>
+            <p class='author'><strong>Enquete criada por:</strong> " . $authorName . "</p>
+            <p class='created-date'><em>Postado em: " . $row['created_at'] . "</em></p>
             </a>
           </li>";
       }

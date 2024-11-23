@@ -8,7 +8,7 @@ include './includes/header.php';
   <?php
   include "./includes/auth.php";
   if ($isLoggedIn) {
-    include "./includes/logged_in_profile.php";
+    include "./includes/user_pools.php";
   } else {
     include "./includes/unlogged_profile.php";
   }

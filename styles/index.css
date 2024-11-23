@@ -58,3 +58,16 @@ button {
     color: #000;
   }
 }
+
+.unlogged-warn {
+  text-align: center;
+  font-size: 18px;
+  text-wrap: wrap;
+  color: #fd572d;
+
+  span > a {
+    color: #fd572d;
+    font-weight: bold;
+    font-size: 24px;
+  }
+}

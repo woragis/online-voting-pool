@@ -58,52 +58,6 @@ button {
     color: #000;
   }
 }
-.pools-title {
-  text-align: center;
-  font-size: 36px;
-  margin: 50px auto -20px;
-  font-weight: 500;
-}
-
-.pools-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
-  align-content: center;
-  margin: 40px 50px;
-  padding: 20px 20px 40px;
-  border-radius: 25px;
-  column-gap: 30px;
-  row-gap: 20px;
-  border: none;
-  background-color: #dadada;
-}
-
-.pool {
-  background-color: #fff;
-  border-radius: 20px;
-  border: none;
-  height: 200px;
-  width: 100%;
-  padding: 10px;
-
-  h1,
-  h2,
-  h3 {
-    color: #000;
-  }
-}
-
-.vote-div {
-  border: 1px solid black;
-  margin: 5px 0;
-  font-size: small;
-  padding: 5px 10px;
-  cursor: pointer;
-
-  display: flex;
-  justify-content: space-between;
-}
 
 .unlogged-warn {
   text-align: center;
@@ -116,6 +70,25 @@ button {
     font-weight: bold;
     font-size: 24px;
   }
+}
+.pools-title {
+  text-align: center;
+  font-size: 36px;
+  margin: 50px auto -20px;
+  font-weight: 500;
+}
+
+.pools-home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 150px;
+  padding: 30px 30px 40px;
+  border-radius: 25px;
+  column-gap: 25px;
+  row-gap: 20px;
+  border: none;
+  background-color: #dadada;
 }
 .navbar-container {
   display: flex;
@@ -200,6 +173,84 @@ button {
 
   .title {
     margin: 50px auto 10px;
+  }
+}
+.pools {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.pool-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 250px;
+  padding: 20px 20px 40px;
+  border-radius: 25px;
+  column-gap: 40px;
+  row-gap: 20px;
+  border: none;
+  background-color: #f7f7f7;
+  .pool {
+    width: 100%;
+
+    .description {
+      font-size: 26px;
+      padding: 0 30px;
+      margin: 20px auto 50px;
+    }
+  }
+}
+
+.pools-profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 250px;
+  padding: 20px 20px 40px;
+  border-radius: 25px;
+  column-gap: 40px;
+  row-gap: 20px;
+  border: none;
+  background-color: #f7f7f7;
+}
+
+.vote-div {
+  border: 1px solid black;
+  margin: 5px 0;
+  font-size: small;
+  padding: 5px 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pool {
+  background-color: #fff;
+  border-radius: 20px;
+  border: none;
+  height: fit-content;
+  min-width: 300px;
+  max-width: 100%;
+  padding: 10px;
+
+  .title {
+    text-align: center;
+    font-size: 24px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+  }
+
+  .author,
+  .created-date {
+    font-size: 10px;
+    margin: 10px 0 0;
   }
 }
 .form {

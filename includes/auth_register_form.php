@@ -4,7 +4,7 @@ if (!defined('ALLOW_INCLUDE')) {
 }
 ?>
 
-<form method="POST" class="form register-form">
+<form method="POST" class="form">
   <h1>Register</h1>
   <input type="text" id="name" name="name" placeholder="Nome Completo" required>
   <input type="email" id="email" name="email" placeholder="Email" required>
@@ -12,8 +12,8 @@ if (!defined('ALLOW_INCLUDE')) {
   <button type="submit">Register</button>
   <div class="form-helper-buttons">
     <p class="authentication-toggler">
-      Already have an account?
-      <a href="login.php">Login Here</a>
+      Ja tem conta?
+      <a href="login.php">Login Aqui</a>
     </p>
   </div>
 </form>

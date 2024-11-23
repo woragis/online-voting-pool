@@ -53,7 +53,9 @@ include './includes/auth.php';
   ];
   ?>
   <header class="navbar-container">
-    <img src="" alt="Votacao Online Logo">
+    <a href="home.php">
+      <img src="" alt="Votacao Online Logo">
+    </a>
     <nav class="navbar">
       <ul class="nav-links">
         <?php

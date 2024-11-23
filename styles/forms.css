@@ -1,12 +1,12 @@
 .form {
-  margin: 40px auto;
-  padding: 20px 40px;
+  margin: 80px auto 120px;
+  padding: 40px 40px 30px;
   border-radius: 25px;
   max-height: max-content;
   max-width: max-content;
   min-height: 300px;
-  min-width: 500px;
-  background-color: #dadada;
+  min-width: 450px;
+  background-color: #b7dcff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,7 +49,7 @@
     background-color: #fff;
     height: 3em;
     width: max-content;
-    margin: 5px 0 5px auto;
+    margin: 5px auto 5px;
     border: none;
     padding: 10px 50px;
     font-weight: 600;
@@ -60,7 +60,7 @@
     transition: 300ms;
   }
   button:hover {
-    padding: 10px 80px;
+    padding: 10px 100px;
   }
 
   p {

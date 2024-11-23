@@ -4,16 +4,15 @@ if (!defined('ALLOW_INCLUDE')) {
 }
 ?>
 
-<form method="POST" class="form login-form">
+<form method="POST" class="form">
   <h1>Login</h1>
   <input type="email" name="email" placeholder="Email" required autocomplete="email">
   <input type="password" name="password" placeholder="Password" required autocomplete="off">
   <button type="submit">Login</button>
   <div class="form-helper-buttons">
-    <p><a href="/forgot-password">Esqueceu a senha?</a></p>
     <p class="authentication-toggler">
-      Don't have an account?
-      <a href="register.php">Register Here</a>
+      Nao tem uma conta ainda?
+      <a href="register.php">Registre-se Aqui</a>
     </p>
   </div>
 </form>

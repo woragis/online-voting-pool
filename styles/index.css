@@ -2,7 +2,12 @@
 
 :root {
   --accent-color: #425dd8;
-  --primary-dark: #151e46;
+  --primary-dark: #44b9c2;
+  --background-color: #fff;
+  --header-color: #fff;
+  --header-bg-color: var(--primary-dark);
+  --footer-color: var(--header-color);
+  --footer-bg-color: var(--primary-dark);
 }
 
 * {
@@ -21,7 +26,7 @@
 }
 
 body {
-  background-color: var(--accent-color);
+  background-color: var(--background-color);
   min-height: calc(100vh - 260px);
 }
 
@@ -31,8 +36,9 @@ body > section {
 
 h1,
 h2,
-h3 {
-  color: #fff;
+h3,
+button {
+  color: #333;
 }
 
 .page-in-information-state {

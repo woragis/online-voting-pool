@@ -7,6 +7,7 @@ if (isset($_POST['field_id']) && isset($_POST['pool_id']) && isset($_POST['user_
   $user_id = $_POST['user_id'];
   $pool_id = $_POST['pool_id'];
 
+  "Testar se a votacao ainda esta aberta";
   // prevent user increments votes
   $test_if_user_already_voted = "SELECT EXISTS(
     SELECT 1

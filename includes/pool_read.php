@@ -48,5 +48,14 @@ if (!defined('ALLOW_INCLUDE')) {
     }
     ?>
   </section>
+  <p>Melhorar css da pagina</p>
+  <p>Caso o usuario seja o dono desse post</p>
+  <ul>
+    <li>Mostrar botao de deletar</li>
+    <li>Mostrar botao de finalizar votacao e selar resultado</li>
+  </ul>
+  <br>
+  <br>
+  <h1>Mostrar usuarios que tambem votaram aqui</h1>
 
 </section>

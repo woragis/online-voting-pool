@@ -46,7 +46,14 @@
 }
 
 .unlogged-warn {
-  font-size: 1.2em;
-  font-weight: bold;
-  color: rgb(204, 68, 68);
+  text-align: center;
+  font-size: 18px;
+  text-wrap: wrap;
+  color: #fd572d;
+
+  span > a {
+    color: #fd572d;
+    font-weight: bold;
+    font-size: 24px;
+  }
 }

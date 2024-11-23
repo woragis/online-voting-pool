@@ -17,18 +17,8 @@ $socialMediaLinks = [
 ];
 ?>
 <footer class="footer-section">
-  <section class="page-links">
-    <h3>Our Pages</h3>
-    <ul>
-      <?php
-      foreach ($footerLinks as $title => $link) {
-        echo "<a href='$link'><li>$title</li></a>";
-      }
-      ?>
-    </ul>
-  </section>
   <section class="social-media">
-    <h3>Team Github</h3>
+    <h3>Time do Github</h3>
     <ul>
       <?php
       foreach ($socialMediaLinks as $title => $link) {
@@ -37,6 +27,11 @@ $socialMediaLinks = [
       ?>
     </ul>
   </section>
+  <div class="copy">
+    <hr>
+    <p>Todos os Direitos Reservados aos Programadores - 2024 &copy;</p>
+    <hr>
+  </div>
 </footer>
 
 <?php

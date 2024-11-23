@@ -1,10 +1,10 @@
-.posts-title {
+.pools-title {
   text-align: center;
   font-size: 24px;
   margin: 80px 0 -30px;
 }
 
-.posts-container {
+.pools-container {
   display: block;
   padding: 30px 20px;
   margin: 50px 100px;
@@ -24,7 +24,7 @@
   }
 }
 
-.listed-post {
+.listed-pool {
   display: inline-block;
   text-align: left;
   min-height: 100px;

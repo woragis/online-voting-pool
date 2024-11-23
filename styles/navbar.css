@@ -3,9 +3,13 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  height: 60px;
-  background-color: #fff;
+  height: 90px;
+  background-color: var(--header-bg-color);
   padding: 0 30px;
+  * {
+    color: var(--header-color);
+    text-decoration: underline;
+  }
 }
 
 .navbar {
@@ -23,7 +27,7 @@
   }
 
   a {
-    color: black;
+    color: var(--header-color);
   }
 }
 

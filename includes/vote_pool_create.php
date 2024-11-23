@@ -47,7 +47,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   <h1>Criar Votacao</h1>
   <?php
   if (!$isLoggedIn) {
-    echo "<span class=unlogged-warn>Faca Login Antes de Criar uma Votacao</span>";
+    echo "<span class=unlogged-warn>
+    <span><a href=login.php>Faca Login</a></span><br>Antes de Criar uma Votacao</span>";
   }
   ?>
   <input type="text" id="title" name="title" placeholder="Titulo" required

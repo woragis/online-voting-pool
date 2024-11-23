@@ -5,7 +5,7 @@ if (!defined('ALLOW_INCLUDE')) {
 ?>
 
 <section class="pools">
-  <h1 class="pools-title">Votacoes</h1>
+  <h1 class="pools-title">Feed de Votacoes</h1>
   <section>
     <?php
     $sql = "SELECT * FROM voting_pool ORDER BY created_at DESC LIMIT 20";

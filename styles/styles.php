@@ -52,6 +52,13 @@ h3 {
     color: #000;
   }
 }
+.pools-title {
+  text-align: center;
+  font-size: 36px;
+  margin: 50px auto -20px;
+  font-weight: 500;
+}
+
 .pools-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

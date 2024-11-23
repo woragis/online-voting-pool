@@ -1,3 +1,4 @@
+<script>
 function vote(field_id, pool_id, user_id) {
   /*
   console.log("Field id: '" + field_id + "'");
@@ -14,9 +15,11 @@ function vote(field_id, pool_id, user_id) {
 
   xhr.onload = function () {
     if (xhr.status == 200) {
+      // reload na pagina
       location.reload();
     } else {
       alert("Erro ao salvar voto.");
     }
   };
 }
+</script>

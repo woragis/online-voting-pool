@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     echo "<span class=unlogged-warn>Faca Login Antes de Criar uma Votacao</span>";
   } else if (!empty($title) && !empty($description)) {
     // Preparar a query para inserir o post no banco de dados
-    $pool_sql = "INSERT INTO voting_pool (author, title, description) VALUES ('$author', '$title', '$description')";
+    $pool_sql = "INSERT INTO pools (author, title, description) VALUES ('$author', '$title', '$description')";
 
     if ($conn->query($pool_sql) === TRUE) {
       $pool_id = $conn->insert_id; // Função para obter o ID do último registro inserido
@@ -27,9 +27,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       $field_1_name = $_POST['field-1-text'];
       $field_2_name = $_POST['field-2-text'];
 
-      $field_0_sql = "INSERT INTO voting_field (pool_id, name) VALUES ('$pool_id', '$field_0_name');";
-      $field_1_sql = "INSERT INTO voting_field (pool_id, name) VALUES ('$pool_id', '$field_1_name');";
-      $field_2_sql = "INSERT INTO voting_field (pool_id, name) VALUES ('$pool_id', '$field_2_name');";
+      $field_0_sql = "INSERT INTO fields (pool_id, name) VALUES ('$pool_id', '$field_0_name');";
+      $field_1_sql = "INSERT INTO fields (pool_id, name) VALUES ('$pool_id', '$field_1_name');";
+      $field_2_sql = "INSERT INTO fields (pool_id, name) VALUES ('$pool_id', '$field_2_name');";
       $conn->query($field_0_sql);
       $conn->query($field_1_sql);
       $conn->query($field_2_sql);

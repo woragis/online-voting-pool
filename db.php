@@ -22,7 +22,7 @@ $sql_users = "CREATE TABLE IF NOT EXISTS users (
 );
 ";
 
-$sql_voting_pool = "CREATE TABLE IF NOT EXISTS voting_pool (
+$sql_pool = "CREATE TABLE IF NOT EXISTS pools (
     id INT AUTO_INCREMENT PRIMARY KEY,
     author INT NOT NULL,
     title VARCHAR(255) NOT NULL,
@@ -32,35 +32,35 @@ $sql_voting_pool = "CREATE TABLE IF NOT EXISTS voting_pool (
     FOREIGN KEY (author) REFERENCES users(id) ON DELETE CASCADE
 );";
 
-$sql_voting_field = "CREATE TABLE IF NOT EXISTS voting_field (
+$sql_field = "CREATE TABLE IF NOT EXISTS fields (
     id INT AUTO_INCREMENT PRIMARY KEY,
     pool_id INT NOT NULL,
     name VARCHAR(255) NOT NULL,
     image TEXT,
     votes INT DEFAULT 0,
-    FOREIGN KEY (pool_id) REFERENCES voting_pool(id) ON DELETE CASCADE
+    FOREIGN KEY (pool_id) REFERENCES pools(id) ON DELETE CASCADE
 );";
 
 $sql_votes = "CREATE TABLE IF NOT EXISTS votes (
     id INT AUTO_INCREMENT PRIMARY KEY,
     user_id INT NOT NULL,
     pool_id INT NOT NULL,
-    vote INT NOT NULL,
+    field_id INT NOT NULL,
     FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
-    FOREIGN KEY (pool_id) REFERENCES voting_pool(id) ON DELETE CASCADE,
-    FOREIGN KEY (vote) REFERENCES voting_field(id) ON DELETE CASCADE
+    FOREIGN KEY (pool_id) REFERENCES pools(id) ON DELETE CASCADE,
+    FOREIGN KEY (field_id) REFERENCES fields(id) ON DELETE CASCADE
 );";
 
 if ($conn->query($sql_users) !== TRUE) {
   echo "Error creating users table: " . $conn->error;
 }
 
-if ($conn->query($sql_voting_pool) !== TRUE) {
-  echo "Error creating voting_pool table: " . $conn->error;
+if ($conn->query($sql_pool) !== TRUE) {
+  echo "Error creating pools table: " . $conn->error;
 }
 
-if ($conn->query($sql_voting_field) !== TRUE) {
-  echo "Error creating voting_field table: " . $conn->error;
+if ($conn->query($sql_field) !== TRUE) {
+  echo "Error creating fields table: " . $conn->error;
 }
 
 if ($conn->query($sql_votes) !== TRUE) {

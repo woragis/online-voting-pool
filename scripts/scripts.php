@@ -15,8 +15,8 @@ function vote(field_id, pool_id, user_id) {
 
   xhr.onload = function () {
     if (xhr.status == 200) {
-      // reload na pagina
-      location.reload();
+      // location.reload()
+      alert("Voto enviado com sucesso: " + xhr.responseText);
     } else {
       alert("Erro ao salvar voto.");
     }

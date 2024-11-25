@@ -11,6 +11,8 @@ $socialMediaLinks = [
   "Mikael" => "",
   "Guilherme" => "",
   "Ricardo" => "",
+  "Joao" => "",
+  "Fernando" => "",
 ];
 ?>
 <footer class="footer-section">
